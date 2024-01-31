@@ -38,17 +38,16 @@ for i in range(N):
 print("positivsed - ", positivset)
 
 4
-
 a = int(input("kirjutage arv"))
 paaritu = 0
 paaris = 0
-for i in a:
-    if i % 2 == 0:
+while a > 0:
+    if (a % 10) % 2 == 0:
         paaris += 1
     else:
         paaritu += 1
-print(paaris, paaritu)
-
+    a = a // 10
+print(f"paaris arvud {paaris}\npaaritu arvud { paaritu}")
 
 5
 
